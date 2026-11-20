@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>通用版考试模拟器</title>
+  <link rel="icon" href="exam.ico">
+  <link rel="stylesheet" href="app.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="glass chrome">
+      <div class="brand"><img src="exam.ico" width="39" height="39" alt="">通用版考试模拟器</div>
+      <nav aria-label="栏目">
+        <button data-nav="home" disabled>首页</button><button data-nav="mistakes" disabled>错题本</button>
+        <button data-nav="history" disabled>练习记录</button><button data-nav="memory" disabled>高速记忆</button>
+        <button data-nav="banks">题库</button>
+      </nav>
+    </header>
+    <main id="screen" aria-busy="true"><p class="glass wait">正在载入题库和练习记录…</p></main>
+  </div>
+  <p id="notice" class="toast" role="status" hidden></p>
+  <dialog id="promptDialog" aria-labelledby="promptTitle">
+    <form method="dialog">
+      <h2 id="promptTitle"></h2><p id="promptText"></p><div id="promptButtons" class="row right"></div>
+    </form>
+  </dialog>
+</body>
+</html>

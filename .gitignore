@@ -1,0 +1,12 @@
+.deps/
+dist/
+obj/
+bin/
+*.tmp
+*.exe
+*.dll
+*.zip
+运行组件/
+题库数据/
+练习记录.json
+练习进度.json
