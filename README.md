@@ -2,6 +2,20 @@
 
 面向 Windows x64 的离线练习工具。导入自定义题库后，自动统计总题量和题型分布。每场采用百分制，支持作答计时、错题重测、练习记录和闪卡。多个题库的练习数据分别保存在本机。
 
+## 下载
+
+[Windows x64 联网便携版（v1.0.0）](https://github.com/satantqr0/universal-exam-simulator/releases/latest)
+
+## 界面截图
+
+以下画面使用随包的 5 题示例题库。成绩示例答对 4 题，多选题少选，正确率为 80%，百分制得分为 60 分。
+
+| 导入题库 | 自动识别题量与组卷 |
+| --- | --- |
+| ![导入题库页面](docs/screenshots/01-import.jpg) | ![题型统计和随机组卷页面](docs/screenshots/02-paper.jpg) |
+| **计时答题** | **百分制成绩与错题** |
+| ![答题计时、选项和答题卡](docs/screenshots/03-exam.jpg) | ![百分制得分、正确率和错题详情](docs/screenshots/04-score.jpg) |
+
 ## 导入题库
 
 支持 `.xlsx`、`.docx`、UTF-8 `.csv` 和 UTF-8 `.tsv`。可复制[示例 CSV](examples/question-bank.csv)，或用同样的列名创建 Excel 工作表、Word 表格。Excel 可以使用多个工作表，每个题目表需要自己的表头。
